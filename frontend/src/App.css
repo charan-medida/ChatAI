@@ -91,20 +91,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-@media (max-width: 768px) {
-  .input-container input {
-    width: 80%; /* Increase width for smaller screens */
-    margin-left: 0; /* Remove any left margin on small screens */
-  }
-}
 
-/* Media query for very small screens (e.g., phones) */
-@media (max-width: 480px) {
-  .input-container input {
-    width: 90%; /* Further increase width for very small screens */
-    padding: 8px; /* Adjust padding for small screens */
-  }
-}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
