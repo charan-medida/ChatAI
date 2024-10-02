@@ -17,7 +17,7 @@ function App() {
     setLoading(true);
 
     try {
-      const res = await axios.post('http://localhost:5000/generate', { prompt });
+      const res = await axios.post('https://chatwithai-6665.onrender.com/generate', { prompt });
       const aiMessage = { text: res.data.response, user: false };
       setMessages((prevMessages) => [...prevMessages, aiMessage]);
     } catch (error) {
