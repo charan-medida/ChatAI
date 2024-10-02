@@ -1,0 +1,137 @@
+
+.App {
+  max-width: 100vmax;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.chat-container {
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  height: 600px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+.chat-container {
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff #ffffff;
+}
+
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+  margin: 10px 0;
+}
+
+.message.user {
+  max-width: 60%;
+  background-color: #294d65;
+  color: white;
+  margin-left: auto;
+  margin-right: 300px;
+}
+
+.message.ai {
+  max-width: 63%;
+  background-color: #e9ecef;
+  color: black;
+  margin-right: auto;
+  margin-left: 300px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.input-container input {
+  width: 60%;
+  
+  min-width: 250px;
+  max-width: 1000px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ba2020;
+  background-color: #d7dae6;
+}
+
+
+.response-box {
+  white-space: pre-wrap;
+}
+
+.fullscreen-image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@media (max-width: 768px) {
+  .input-container input {
+    width: 80%; /* Increase width for smaller screens */
+    margin-left: 0; /* Remove any left margin on small screens */
+  }
+}
+
+/* Media query for very small screens (e.g., phones) */
+@media (max-width: 480px) {
+  .input-container input {
+    width: 90%; /* Further increase width for very small screens */
+    padding: 8px; /* Adjust padding for small screens */
+  }
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.fullscreen-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
