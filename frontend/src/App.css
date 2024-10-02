@@ -122,3 +122,16 @@
     transform: rotate(360deg);
   }
 }
+@media (max-width: 600px) {
+  .chat-container {
+    height: 80vh; /* Adjust height for mobile */
+  }
+
+  .message {
+    max-width: 90%; /* Allow wider messages */
+  }
+
+  .input-container input {
+    width: 80%; /* Full width on mobile */
+  }
+}
